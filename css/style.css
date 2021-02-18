@@ -1,0 +1,101 @@
+body {
+  background: url("../images/background/background.jpg");
+}
+
+main {
+  margin-bottom: 2%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-family: "STJEDISE";
+  src: url('STJEDISE.TTF');
+  color: #FFE436;
+}
+
+h2 {
+  text-align: center;
+  color: #FFE436;
+}
+
+h3 {
+  text-align: center;
+  color: #FFE436;
+}
+
+p {
+  text-align: center;
+  color: white;
+}
+
+.img-fluid {
+  width: 10%;
+  margin-right: 4%;
+}
+
+ul {
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.carousel {
+  margin-top: 2%;
+}
+
+.carousel-item {
+  height: auto;
+}
+
+.d-block {
+  width: 100%;
+  height: 100%;
+}
+
+.bienvenue {
+  margin-top: 2%;
+}
+
+.imgstar {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+.jumbotron {
+  margin-top: 3%;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+
+  .navbar .nav-item:hover .nav-link {
+    color: #fff;
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+
+@font-face {
+  font-family: "STJEDISE";
+  src: url('STJEDISE.TTF');
+}

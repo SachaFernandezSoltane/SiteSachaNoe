@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Star Wars</title>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/svg" href="images/Icone.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="mdbootstrap" href="css/bootstrap.min.css.map">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html"><img src="images/space-station.svg" class="img-fluid">Star wars par Noé et Sacha </a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse navbar-right justify-content-end" id="navbarNavDarkDropdown">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="intro.html">
+								Intro
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="personnages.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-hover="dropdown" aria-expanded="false">
+								Personnages
+							</a>
+							<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+								<li><a class="dropdown-item" href="lumineux.html">Côté Lumineux</a></li>
+								<li><a class="dropdown-item" href="obscur.html">Côté Obscur</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Vaisseaux
+							</a>
+							<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+								<li><a class="dropdown-item" href="#">Faucn Millénium</a></li>
+								<li><a class="dropdown-item" href="#">X-Wing</a></li>
+								<li><a class="dropdown-item" href="#">Chasseur TTE</a></li>
+								<li><a class="dropdown-item" href="#">Destroyer Stellaire de classe Impériale</a></li>
+								<li><a class="dropdown-item" href="#">TTE X1 avancé</a></li>
+							</ul>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Planètes
+							</a>
+							<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+								<li><a class="dropdown-item" href="#">Tatoine</a></li>
+								<li><a class="dropdown-item" href="#">Coruscant</a></li>
+								<li><a class="dropdown-item" href="#">Kashyyyk</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="btn-group" role="group" aria-label="Basic example">
+						<button type="button" class="btn btn-secondary">Se connecter</button>
+					</div>
+				</div>
+		</nav>
+	</header>
+
+	<main>
+		<h1>Les aventures de Star Wars</h1>
+		<div class="container">
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="images/carousel/mando.jpg" class="d-block rounded" alt="carousel">
+					</div>
+					<div class="carousel-item">
+						<img src="images/carousel/SW2.jpg" class="d-block rounded" alt="carousel">
+					</div>
+					<div class="carousel-item">
+						<img src="images/carousel/SW3.jpg" class="d-block rounded" alt="carousel">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Précédent</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Suivant</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="container bienvenue">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
+					<div class="row">
+						<div class="d-none d-sm-block col-sm-3 col-md-3 col-lg-3">
+							<img src="images/star.svg" class="imgstar" alt="logo empire">
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<h2>Bienvenue dans l'univers Star Wars</h2>
+						</div>
+						<div class="d-none d-sm-block col-sm-3 col-md-3 col-lg-3">
+							<img src="images/star.svg" class="imgstar" alt="logo empire">
+						</div>
+					</div>
+
+					<!-- DEBUT CODE MISE EN PAGE XML PAR ACTIFPUB V2 -->
+				  <SCRIPT language="Javascript">
+				 var member=""; //optionnel si vous etes inscrit sur la plateforme actifpub  le parametrage se fait dans votre espace membre
+				 var fichier="https://www.starwars-universe.com/swu/rss.xml";
+				 var limite="1";  //  sujets compris entre 1
+				 var limite1="3";   //  et plus
+				  var aspect="0";  //  0 ou 1 (1 permet d'afficher lien + description, 0 que les liens)
+				 var minute="1";  //  0 ou 1 (1 permet d'afficher date et heure, 0 pas de date et heure)
+				 var sujet="1"; //  0 ou 1 (1 permet d'afficher le titre des sujets traités, 0 pas de titre )
+				 var te="Geneva, Arial, sans-serif";  // Police de caractères (Verdana, arial etc...)
+				 var fil_textsize="20"; // taille des liens et description
+				 var title_textcolor="F6F4F3"; // couleur des liens (000000 donne noir)
+				 var tlien="underline"; // style du lien none ou underline
+				 var text_textcolor="E8E42B";  // couleur description (000000 donne noir)
+				 var frame_color=""; // couleur arrière plan (FFFFFF donne blanc)
+				 var content="0"; // 0 ou 1 comme paramètre optionnel, 1  format html,  0  format texte
+				 var extract="";  // laisser vide ou indiquez le nombre de caractères que vous souhaitez garder dans le corps du flux
+				 var cache="15"; // gestion du cache exprimée en minutes - en fonction de la fréquence de mise à jour
+				  document.write('<s'+'cript language="JavaScript" type="text/javascript" SRC="http://www.actifpub.com/rss.php?fichier_AP_='+fichier+'&limite_AP_='+limite+'&limite1_AP_='+limite1+'&aspect_AP_='+aspect+'&minute_AP_='+minute+'&sujet_AP_='+sujet+'&te_AP_='+te+'&fil_textsize_AP_='+fil_textsize+'&title_textcolor_AP_='+title_textcolor+'&text_textcolor_AP_='+text_textcolor+'&frame_color_AP_='+frame_color+'&content_AP_='+content+'&cache_AP_='+cache+'&extract_AP_='+extract+'&tlien_AP_='+tlien+'&java=1&member_AP_='+member+'"></sc'+'ript>');
+				  </script>
+
+
+				</div>
+				<div class="container col-xs-12 col-sm-12 col-md-12 col-lg-3">
+					<div class="row">
+						<h3>A propos</h3>
+						<p>Ce site est en l'honneur de l'univers Star Wars fait par G.Lucas en 1977.</p>
+						<h3>Sites favoris</h3>
+						<ul>
+							<li><a href="https://starwars.fandom.com/fr/wiki/Accueil" class="nav-link liencentre" target="_blank">Star wars fandom</a></li>
+							<li><a href="https://www.starwars-universe.com/" class="nav-link liencentre" target="_blank">Star wars univers</a></li>
+							<li><a href="https://www.starwars.com/" class="nav-link liencentre" target="_blank">Star wars</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
+				<i class="fas fa-angle-up"></i>
+			</a>
+	</main>
+
+	<footer class="bg-dark text-center text-lg-start text-white mt-auto">
+		<!-- Copyright -->
+		<div class="text-center p-3">
+			© 2020 Copyright:
+			<a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+		</div>
+		<!-- Copyright -->
+	</footer>
+
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/mdbootstrap" src="js/bootstrap.bundle.min.js.map"></script>
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/arrow.js"></script>
+
+</body>
+
+</html>
